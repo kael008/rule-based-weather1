@@ -9,7 +9,7 @@ const data = [
     },
     {
         query: "Hello",
-        outputs: "Hi, How can I help you today?"
+        outputs: "How can I help you today?"
     },
     {
         query: "What is your name?",
@@ -38,9 +38,10 @@ sendBtn.addEventListener('click', () => {
 
     let matched = false;
     data.forEach(element => {
-        if (element.query.toLowerCase().includes(inputVal.toLowerCase())) {
+        if (element.query.toLowerCase().includes(inputVal.toLowerCasie())) {
             outputs.innerText = element.outputs;
             matched = true;
+            
         }
     });
 
