@@ -17,12 +17,12 @@ const data = [
     },
 
     {
-        query: "What is the humidity in philippines?",
+        query: "What is the humidity philippines?",
         outputs: "Today in the Philippines, humidity levels are high, with readings in Manila at approximately 82-85%, contributing to a warm and humid feel throughout the day and evening. This is combined with temperatures around 28°C (82°F) that feel closer to 32°C (89°F) due to the humidity. Conditions are expected to stay mostly cloudy, with minimal precipitation and light winds from the southwest, which should persist through the evening"
     },
 
     {
-        query: "What is the weather today in philippine?",
+        query: "What is the weather today  philippines?",
         outputs: "Today in the Philippines, expect warm and humid conditions with scattered thunderstorms across various regions. Temperatures range between 26–30°C (79–86°F) with an expected high humidity level of around 80%. Afternoon and evening may see intermittent rain and thunderstorms, particularly affecting the western parts of Luzon and areas along the eastern seaboard. Winds are generally light to moderate, coming from the southwest.​"
     },
 ];
@@ -38,7 +38,7 @@ sendBtn.addEventListener('click', () => {
 
     let matched = false;
     data.forEach(element => {
-        if (element.query.toLowerCase().includes(inputVal.toLowerCasie())) {
+        if (element.query.toLowerCase().trim()===(inputVal.toLowerCase().trim())) {
             outputs.innerText = element.outputs;
             matched = true;
             
