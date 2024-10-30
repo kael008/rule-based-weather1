@@ -22,7 +22,7 @@ const data = [
     },
 
     {
-        query: "What is the weather today  philippines?",
+        query: "What is the weather today?",
         outputs: "Today in the Philippines, expect warm and humid conditions with scattered thunderstorms across various regions. Temperatures range between 26–30°C (79–86°F) with an expected high humidity level of around 80%. Afternoon and evening may see intermittent rain and thunderstorms, particularly affecting the western parts of Luzon and areas along the eastern seaboard. Winds are generally light to moderate, coming from the southwest.​"
     },
 ];
