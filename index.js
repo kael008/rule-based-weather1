@@ -17,7 +17,7 @@ const data = [
     },
 
     {
-        query: "What is the humidity philippines?",
+        query: "What is the humidity today?",
         outputs: "Today in the Philippines, humidity levels are high, with readings in Manila at approximately 82-85%, contributing to a warm and humid feel throughout the day and evening. This is combined with temperatures around 28°C (82°F) that feel closer to 32°C (89°F) due to the humidity. Conditions are expected to stay mostly cloudy, with minimal precipitation and light winds from the southwest, which should persist through the evening"
     },
 
