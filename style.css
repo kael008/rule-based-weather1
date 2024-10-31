@@ -1,78 +1,86 @@
-*{
-    padding: 0;
+* {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-image: url(img/4882066.jpg);
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    align-items: center;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
 }
 
-.main-content{
+.container {
     width: 400px;
     height: 500px;
     background-color: white;
     border-radius: 10px;
-}
-
-.header{
-    width: 400px;
-    background-color: rgb(71, 27, 248);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    color: white;
-    padding: 10px;
-}
-
-.input-area{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     display: flex;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 44px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.input-area input{
-    width: 347px;
-    border-bottom-left-radius: 10px;
+.header {
+    background-color: rgb(71, 27, 248);
+    color: white;
     padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-#sendBtn{
-    padding: 10px;
-    margin: right 10px; ;
-    background-color:#4e92f7;
+.input-area {
+    display: flex;
+    border-top: 1px solid #000000;
+    margin-top: auto;
+}
+
+.input-area input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#sendBtn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
     border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.text-content p{
-    margin-left: 20px;
-}
-.text-content{
-    margin-top: 10px;
-}
-.text-content span{
-    width: 20px;
-    margin-left: 20px;
 
+#sendBtn:hover {
+    background-color: #0056b3;
 }
+
+.text-content {
+    margin: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.text-content p {
+    margin-left: 20px;
+}
+
+.text-content span {
+    margin-left: 20px;
+}
+
 .text-inputs {
     padding: 10px;
     border-radius: 10px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
- 
-
+    color: #000;
+    font-size: 1rem;
 }
-
-
-
-
-
